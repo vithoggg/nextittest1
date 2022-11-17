@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,145 +6,185 @@
     font-family: "Google Sans Regular";
     box-sizing: border-box;
 }
-body{
-    background: #fefefe;
+
+body {
+    background: #23242a;
+    overflow-x: hidden;
 }
-header{
+
+header {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     background: #11101b;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
+    padding-left: 10%;
+    position: fixed;
+    z-index: 100;;
 }
-.logo{
+
+.logo {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Rubik Bubbles', cursive;
     color: #fefefe;
+    
 }
-.logo span{
+
+.logo span {
     font-family: 'Rubik Bubbles', cursive;
     color: #04cc22;
 }
-.frstcontainer{
+
+.frstcontainer {
     display: none;
-    
+
 }
-.nav-bar ul{
+
+.nav-bar ul {
     display: flex;
-    
+    margin-left: 150px;;
 }
+
 .nav-bar ul li a {
     display: block;
     color: #ffffff;
-    font-size: 20px;
-    padding: 10px 25px;
+    font-size: 15px;
+    padding: 10px 15px;
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
     
+    font-weight: 700;
+
 }
-.nav-bar ul li a:hover{
+
+.nav-bar ul li a:hover {
     color: #ffffff;
     background: #4287f5;
 }
 
-.nav-bar ul li a.active{
+.nav-bar ul li a.active {
     color: #ffffff;
-    background: #4287f5;
-}
-.intro{
-    height: 70vh;
+    background: #04cc22;
 }
 
-@media only screen and (max-width: 1320px){
-    header{
-        padding: 0 50px;
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 15px;
     }
 }
-@media only screen and (max-width: 1100px){
-    header{
-        padding: 0 30px;
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 10px;
     }
 }
-@media only screen and (max-width: 900px){
-    .frstcontainer{
+
+@media only screen and (max-width: 930px) {
+    .frstcontainer {
         display: block;
         cursor: pointer;
-        
+
     }
-    .frstcontainer .line{
+
+    .frstcontainer .line {
         width: 30px;
         height: 3px;
         background: #fefefe;
         margin: 6px 0;
-        
+
     }
-    .nav-bar{
+
+    .nav-bar {
         height: 0px;
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: 0;
         right: 0;
         width: 100vw;
-        background: #4287f5;
+        background: #031c57;
         transition: 0.8s;
         overflow: hidden;
-         z-index: 100;
+        z-index: 100;
     }
-    .nav-bar.active{
-        height: 580px;
+
+    .nav-bar.active {
+        height: 60vh;
+        
     }
-    .nav-bar ul{
+
+    .nav-bar ul {
         display: block;
         width: fit-content;
         margin: 80px auto 0 auto;
         text-align: center;
         transition: 0.8s;
         opacity: 0;
-        
+
     }
-    .nav-bar.active ul{
+
+    .nav-bar.active ul {
         opacity: 1;
         
+
     }
-    .nav-bar ul li a{
+
+    .nav-bar ul li a {
         margin-bottom: 12px;
     }
 }
 
 
-.intro{
-    height: 70vh;
+.intro {
+    height: 100vh;
     display: inline-block;
     text-align: center;
-    
+
 }
-.intro h1 span{
-    color: greenyellow;  
+
+.intro h1 span {
+    color: greenyellow;
     font-size: 150%;
+    font-family: 'Anton', sans-serif;
 }
-.intro h1{
-    
+
+.intro h1 {
+
     padding-top: 7%;
     color: whitesmoke;
-    font-family: cursive
-        
+    
 }
-.intro h2{
+
+.intro h2 {
     color: #ffffff;
     padding-top: 1.5%;
-    max-width: 
+    max-width:
 }
 
 
 
 
 
+.cont_box {
+    display: flex;
+    
+}
 
+.cont_box img {
+    width: 20em;
+}
+.cont_box h2{
+    font-size: 20px;
+}
+/*TODO: fonts and center main text and image
+*add button to scroll to text*/
 
-
-
-
+.bodyContainer{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
